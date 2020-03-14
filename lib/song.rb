@@ -13,28 +13,26 @@ class Song
     @@count += 1
     @@artists << artist
     @@genres << genre
-
+  end
+  #returns total songs in class
+  def self.count
+    @@count
   end
 
-  #returns total songs in class
-def self.count
-  @@count
-end
+  #returns list of all artists in class
+  def self.artists
+    @@artists
+  end
 
-#returns list of all artists in class
-def self.artists
-  @@artists
-end
-
-#returns list of all genres in class
-def self.genres
-  @@genres
+  #returns list of all genres in class
+  def self.genres
+    @@genres
+  end
 end
 
 
-  # produces individual songs
-  #needs to track number of songs it creates
-  #needs to show us all artists of exisitng songs
-  #needs to show us all genres of existing songs
-  #needs to track all songs for genre
-end
+# produces individual songs
+#needs to track number of songs it creates
+#needs to show us all artists of exisitng songs
+#needs to show us all genres of existing songs
+#needs to track all songs for genre
