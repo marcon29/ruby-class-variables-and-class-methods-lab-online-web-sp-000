@@ -22,7 +22,6 @@ class Song
   end
 
   def self.artists
-    binding.pry
     artist_list = []
     @@artists.each { |artist| artist_list << artist if !artist_list.include?(artist) }
     artist_list
