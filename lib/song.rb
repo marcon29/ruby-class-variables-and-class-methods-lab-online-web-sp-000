@@ -30,8 +30,15 @@ class Song
   end
 
   def self.artist_count
-    binding.pry
-
+    artist_song = {}
+    @@artists.each do |artist|
+      if artist_song.has_key?(artist)
+        artist_song[artist] +=1
+      else
+        artist_song[artist] = 1
+      end
+    end
+    artist_song
   end
 
 end
